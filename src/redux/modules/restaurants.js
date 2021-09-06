@@ -8,6 +8,8 @@ const initialState = {
   restaurantSelected: null,
 };
 
+
+
 export default function reducer(state = initialState, action) {
   switch (action.type) {
     case Types.SET_RESTAURANTS:
@@ -18,6 +20,8 @@ export default function reducer(state = initialState, action) {
       return state;
   }
 }
+
+
 
 export function setRestaurants(restaurants) {
   return {
